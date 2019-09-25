@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+<title>Información</title>
+{% endblock %}
+
+{% block page %}
+<h1>Página de Información</h1>
+{% endblock %}
+
+{% block navbar %}
+<li class="active"><a href="http://127.0.0.1:5000/">Información Personal</a></li>
+<li><a href="http://127.0.0.1:5000/academics">Formación Académica</a></li>
+<li><a href="http://127.0.0.1:5000/work">Experiencia Laboral</a></li>
+<li><a href="http://127.0.0.1:5000/contact">Contacto</a></li>
+{% endblock %}
+
+{% block info %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Sobre Mí</h2>
+      <img src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"></img>
+      <h4>Bruh</h4>
+      <!-- <h4><link rel = "import" src = "info.yml"></h4> -->
+      <!-- % for nombre, edad, estado_civil, correo, direccion, nacionalidad, sobre_mi in data.items() %}  
+        <h4>{{ nombre }}, {{ edad }}</h4>
+        <h4>{{ estado_civil }}</h4>
+        <h4>{{ correo }}</h4>
+        <h4>{{ direccion }}</h4>
+        <h4>{{ nacionalidad }}</h4>
+        <p>{{ sobre_mi }}</p> 
+      {$ endfor %} -->
+    </div>
+  </div>
+</div>
+{% endblock %}
