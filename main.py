@@ -3,26 +3,24 @@ import yaml
 
 app = Flask(__name__)
 
-# @app.route("/") # home page
-# def home():
-#     return "Hello!"
-
-# my_list = []
-# with open("info.yml", 'r') as f:
-#     line = f.readline()
-#     while line:
-#         my_list.append(line.strip())
-#         line = f.readline()
-# print(my_list)
-
-# print(line.strip())
+with open("info.yml", 'r') as f:
+    file = f.read()
 
 my_dict = yaml.safe_load(open("info.yml"))
-print(my_dict)
 
 @app.route("/") # info page
 def info():
-    return render_template("info.html")
+    return render_template(
+    "info.html", 
+    nombre = my_dict["nombre"],
+    edad = my_dict["edad"],
+    estado_civil = my_dict["estado_civil"],
+    correo = my_dict["correo"],
+    direccion = my_dict["direccion"],
+    nacionalidad = my_dict["nacionalidad"],
+    sobre_mi = my_dict["sobre_mi"],
+    imagen = my_dict["imagen"]
+    )
 
 @app.route("/academics") # info page
 def academics():
