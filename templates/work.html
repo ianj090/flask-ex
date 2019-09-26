@@ -4,6 +4,29 @@
 <title>Experiencia Laboral</title>
 {% endblock %}
 
+{% block style %}
+<style>
+body {
+  background-image: linear-gradient(to bottom right, white, yellow);
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background: white;
+  padding: 2px 16px;
+}
+.container {
+  padding: 2px 16px;
+}
+.container-fluid {
+  padding: 2px 50px;
+}
+.text {
+  padding: 1% 5%;
+}
+</style>
+{% endblock %}
+
 {% block page %}
 <h1>Página de Experiencia Laboral</h1>
 {% endblock %}
@@ -16,18 +39,18 @@
 {% endblock %}
 
 {% block info %}
-<div class="container">
+<div class="card">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="container-fluid">
       <h3>Lugar - </h3>
-      <h4>Nombre de la Empresa: </h4>
-      <h5>Nunca he trabajado</h5>
-      <h4>Puesto de Trabajo: </h4>
-      <h5>Nunca he trabajado</h5>
-      <h4>Período: </h4>
-      <h5>Nunca he trabajado</h5>
-      <h4>Breve Descripción: </h4>
-      <h5>Nunca he trabajado</h5>
+      <h4 style="font-size:2.3vw"><b>Nombre de la Empresa: </b></h4>
+      <h5 class="text" style="font-size:2vw">Nunca he trabajado</h5>
+      <h4 style="font-size:2.3vw"><b>Puesto de Trabajo: </b></h4>
+      <h5 class="text" style="font-size:2vw">Nunca he trabajado</h5>
+      <h4 style="font-size:2.3vw"><b>Período: </b></h4>
+      <h5 class="text" style="font-size:2vw">Nunca he trabajado</h5>
+      <h4 style="font-size:2.3vw"><b>Breve Descripción: </b></h4>
+      <h5 class="text" style="font-size:2vw">Nunca he trabajado</h5>
     </div>
   </div>
 </div>

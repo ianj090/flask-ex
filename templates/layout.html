@@ -3,17 +3,18 @@
   <head>
     {% block title %}{% endblock %}
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    {% block style %}{% endblock %}
   </head>
-  <body>
+  <body background-image: linear-gradient(to bottom right, red, yellow);>
     <div class="jumbotron text-center" style="margin-bottom:0">
     {% block page %}{% endblock %}
     </div>
     <nav class="navbar navbar-inverse navbar-expand-sm">
-      <div class="container-fluid">
+      <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand">Flask - Ian Jenatz</a>
         </div>

@@ -4,6 +4,29 @@
 <title>Contacto</title>
 {% endblock %}
 
+{% block style %}
+<style>
+body {
+  background-image: linear-gradient(to bottom right, white, rgb(0, 255, 38));
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background: white;
+  padding: 2px 16px;
+}
+.container {
+  padding: 2px 16px;
+}
+.container-fluid {
+  padding: 2px 50px;
+}
+.text {
+  padding: 1% 5%;
+}
+</style>
+{% endblock %}
+
 {% block page %}
 <h1>Página de Contacto</h1>
 {% endblock %}
@@ -16,18 +39,18 @@
 {% endblock %}
 
 {% block info %}
-<div class="container">
+<div class="card">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="container-fluid">
       <h3>Links - </h3>
-      <h4>LinkedIn: </h4>
-      <h5>I don't have a LinkedIn profile</h5>
-      <h4>Twitter: </h4>
-      <h5>I don't have a twitter profile</h5>
-      <h4>Facebook: </h4>
-      <h5> <a href = "https://www.facebook.com/ian.jenatz.16">Facebook Link</a></h5>
-      <h4>Instagram: </h4>
-      <h5> <a href="https://www.instagram.com/ianj090/">Instagram Link</a></h5>
+      <h4 style="font-size:2.3vw"><b>LinkedIn: </b></h4>
+      <h5 class="text" style="font-size:2vw">I don't have a LinkedIn profile</h5>
+      <h4 style="font-size:2.3vw"><b>Twitter: </b></h4>
+      <h5 class="text" style="font-size:2vw">I don't have a twitter profile</h5>
+      <h4 style="font-size:2.3vw"><b>Facebook: </b></h4>
+      <h5 class="text" style="font-size:2vw"> <a href = "https://www.facebook.com/ian.jenatz.16">Facebook Link</a></h5>
+      <h4 style="font-size:2.3vw"><b>Instagram: </b></h4>
+      <h5 class="text" style="font-size:2vw"> <a href="https://www.instagram.com/ianj090/">Instagram Link</a></h5>
     </div>
   </div>
 </div>

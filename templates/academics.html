@@ -4,6 +4,29 @@
 <title>Formación Académica</title>
 {% endblock %}
 
+{% block style %}
+<style>
+body {
+  background-image: linear-gradient(to bottom right, white, red);
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background: white;
+  padding: 2px 16px;
+}
+.container {
+  padding: 2px 16px;
+}
+.container-fluid {
+  padding: 2px 50px;
+}
+.text {
+  padding: 1% 7%;
+}
+</style>
+{% endblock %}
+
 {% block page %}
 <h1>Página de Formación Académica</h1>
 {% endblock %}
@@ -16,79 +39,89 @@
 {% endblock %}
 
 {% block info %}
-<div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Colegio - </h3>
-        <h4><b>Nombre del Establecimiento: </b></h4>
-        <h5>International School of Curitiba</h5>
-        <h4><b>Nivel Académico: </b></h4>
-        <h5>Primaria</h5>
-        <h4><b>Nombre de la Carrera: </b></h4>
-        <h5>Colegio</h5>
-        <h4><b>Período: </b></h4>
-        <h5>2004-2007</h5>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Colegio - </h3>
-        <h4><b>Nombre del Establecimiento: </b></h4>
-        <h5>International School of Prague</h5>
-        <h4><b>Nivel Académico: </b></h4>
-        <h5>Primaria</h5>
-        <h4><b>Nombre de la Carrera: </b></h4>
-        <h5>Colegio</h5>
-        <h4><b>Período: </b></h4>
-        <h5>2007-2011</h5>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Secundaria - </h3>
-        <h4><b>Nombre del Establecimiento: </b></h4>
-        <h5>Colegio Americano de Guatemala</h5>
-        <h4><b>Nivel Académico: </b></h4>
-        <h5>Bachillerato</h5>
-        <h4><b>Nombre de la Carrera: </b></h4>
-        <h5>Colegio</h5>
-        <h4><b>Período: </b></h4>
-        <h5>2011-2018</h5>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Extras - </h3>
-        <h4><b>Nombre del Establecimiento: </b></h4>
-        <h5>German Language Society</h5>
-        <h4><b>Nivel Académico: </b></h4>
-        <h5>Bachillerato</h5>
-        <h4><b>Nombre de la Carrera: </b></h4>
-        <h5>El Lenguaje Alemán</h5>
-        <h4><b>Período: </b></h4>
-        <h5>2018-2018</h5>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Universidad - </h3>
-        <h4><b>Nombre del Establecimiento: </b></h4>
-        <h5>Universidad Francisco Marroquín</h5>
-        <h4><b>Nivel Académico: </b></h4>
-        <h5>Universitario</h5>
-        <h4><b>Nombre de la Carrera: </b></h4>
-        <h5>Ingeniería en Ciencias de la Computación</h5>
-        <h4><b>Período: </b></h4>
-        <h5>2018-2019</h5>
-      </div>
-    </div>
-  </div>
+<div class="card">
+  <table>
+    <tr>
+      <td>
+        <div class="row">
+          <div class="container-fluid">
+            <h3>Colegio - </h3>
+            <h4 style="font-size:2.5vw"><b>Nombre del Establecimiento: </b></h4>
+            <h5 class="text"style="font-size:2vw">International School of Curitiba</h5>
+            <h4 style="font-size:2.5vw"><b>Nivel Académico: </b></h4>
+            <h5 class="text"style="font-size:2vw">Primaria</h5>
+            <h4 style="font-size:2.5vw"><b>Nombre de la Carrera: </b></h4>
+            <h5 class="text"style="font-size:2vw">Colegio</h5>
+            <h4 style="font-size:2.5vw"><b>Período: </b></h4>
+            <h5 class="text"style="font-size:2vw">2004-2007</h5>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="row">
+          <div class="container-fluid">
+            <h3>Colegio - </h3>
+            <h4 style="font-size:2.5vw"><b>Nombre del Establecimiento: </b></h4>
+            <h5 class="text"style="font-size:2vw">International School of Prague</h5>
+            <h4 style="font-size:2.5vw"><b>Nivel Académico: </b></h4>
+            <h5 class="text"style="font-size:2vw">Primaria</h5>
+            <h4 style="font-size:2.5vw"><b>Nombre de la Carrera: </b></h4>
+            <h5 class="text"style="font-size:2vw">Colegio</h5>
+            <h4 style="font-size:2.5vw"><b>Período: </b></h4>
+            <h5 class="text"style="font-size:2vw">2007-2011</h5>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="row">
+          <div class="container-fluid">
+            <h3>Colegio - </h3>
+            <h4 style="font-size:2.5vw"><b>Nombre del Establecimiento: </b></h4>
+            <h5 class="text"style="font-size:2vw">Colegio Americano de Guatemala</h5>
+            <h4 style="font-size:2.5vw"><b>Nivel Académico: </b></h4>
+            <h5 class="text"style="font-size:2vw">Bachillerato</h5>
+            <h4 style="font-size:2.5vw"><b>Nombre de la Carrera: </b></h4>
+            <h5 class="text"style="font-size:2vw">Colegio</h5>
+            <h4 style="font-size:2.5vw"><b>Período: </b></h4>
+            <h5 class="text"style="font-size:2vw">2011-2018</h5>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="row">
+          <div class="container-fluid">
+            <h3>Extras - </h3>
+            <h4 style="font-size:2.5vw"><b>Nombre del Establecimiento: </b></h4>
+            <h5 class="text"style="font-size:2vw">German Language Society</h5>
+            <h4 style="font-size:2.5vw"><b>Nivel Académico: </b></h4>
+            <h5 class="text"style="font-size:2vw">Bachillerato</h5>
+            <h4 style="font-size:2.5vw"><b>Nombre de la Carrera: </b></h4>
+            <h5 class="text"style="font-size:2vw">El Lenguaje Alemán</h5>
+            <h4 style="font-size:2.5vw"><b>Período: </b></h4>
+            <h5 class="text"style="font-size:2vw">2018-2018</h5>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="row">
+          <div class="container-fluid">
+            <h3>Universidad - </h3>
+            <h4 style="font-size:2.5vw"><b>Nombre del Establecimiento: </b></h4>
+            <h5 class="text"style="font-size:2vw">Universidad Francisco Marroquín</h5>
+            <h4 style="font-size:2.5vw"><b>Nivel Académico: </b></h4>
+            <h5 class="text"style="font-size:2vw">Universitario</h5>
+            <h4 style="font-size:2.5vw"><b>Nombre de la Carrera: </b></h4>
+            <h5 class="text"style="font-size:2vw">Ingeniería en Ciencias de la Computación</h5>
+            <h4 style="font-size:2.5vw"><b>Período: </b></h4>
+            <h5 class="text"style="font-size:2vw">2018-2019</h5>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
 {% endblock %}
