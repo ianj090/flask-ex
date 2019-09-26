@@ -7,15 +7,18 @@ app = Flask(__name__)
 # def home():
 #     return "Hello!"
 
-edad = 19
+# my_list = []
+# with open("info.yml", 'r') as f:
+#     line = f.readline()
+#     while line:
+#         my_list.append(line.strip())
+#         line = f.readline()
+# print(my_list)
 
-with open("info.yml", 'r') as f:
-    line = f.readline()
-    while line:
-        print("{}".format(line.strip()))
-        line = f.readline()
+# print(line.strip())
 
-
+my_dict = yaml.safe_load(open("info.yml"))
+print(my_dict)
 
 @app.route("/") # info page
 def info():
