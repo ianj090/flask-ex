@@ -19,12 +19,12 @@ Deben haber tres rutas, cada una devuelve una página html.
 - [x] Un About en varios párrafos
 - [x] Foto
 
-- [ ] La información a mostrar no debe estar “quemada” en el html. Se debe obtener de un archivo llamado info.yml.
+- [x] La información a mostrar no debe estar “quemada” en el html. Se debe obtener de un archivo llamado info.yml.
 
 # Página de Formación Académica
 
 - [ ] Página de Formación Académica
-- [ ] Por cada uno de los establecimientos
+- [x] Por cada uno de los establecimientos
 
 - [x] Nombre del establecimiento
 - [x] Nivel de Académico
@@ -34,7 +34,7 @@ Deben haber tres rutas, cada una devuelve una página html.
 # Página de Experiencia Laboral
 
 - [ ] Página de Experiencia Laboral
-- [ ] Por cada uno de los establecimientos
+- [x] Por cada uno de los establecimientos
 
 - [x] Nombre de la empresa
 - [x] Puesto de Trabajo
@@ -52,4 +52,4 @@ Deben haber tres rutas, cada una devuelve una página html.
 
 # Contacto
 
-- [ ] Página de Contacto
+- [x] Página de Contacto
