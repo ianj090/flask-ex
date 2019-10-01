@@ -19,6 +19,8 @@ def info():
     direccion = my_dict["direccion"],
     nacionalidad = my_dict["nacionalidad"],
     sobre_mi = my_dict["sobre_mi"],
+    sobre_mi_2 = my_dict["sobre_mi_2"],
+    sobre_mi_3 = my_dict["sobre_mi_3"],
     imagen = my_dict["imagen"]
     )
 
