@@ -16,7 +16,7 @@ Deben haber tres rutas, cada una devuelve una página html.
 - [x] Correo Electrónico
 - [x] Dirección
 - [x] Nacionalidad
-- [ ] Un About en varios párrafos
+- [x] Un About en varios párrafos
 - [x] Foto
 
 - [x] La información a mostrar no debe estar “quemada” en el html. Se debe obtener de un archivo llamado info.yml.
